@@ -47,6 +47,7 @@ class App extends React.Component {
   }
 
   clearSearch() {
+    document.getElementById('inputLabel').value = ''
     this.setState({
       books: [...data],
       input: ""

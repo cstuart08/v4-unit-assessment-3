@@ -8,7 +8,7 @@ class Searchbar extends Component {
     render() {
         return (
             <div>
-                <input className="search-input" onChange={(e) => {this.props.updateInput(e)}} />
+                <input className="search-input" onChange={(e) => {this.props.updateInput(e)}} id="inputLabel"></input>
                 <button className="search-button" onClick={() => {this.props.filterBooks(this.props.input)}}>Search</button>
                 <button className="search-clear-button" onClick={() => {this.props.clearSearch()}}>Clear Search</button>
             </div>
